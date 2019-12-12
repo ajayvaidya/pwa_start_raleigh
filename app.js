@@ -40,7 +40,7 @@ var text_tone = {
 var curr_docs = {};
 var Cloudant = require('@cloudant/cloudant');
 
-/*cloudant = Cloudant("https://0ec7cd4c-48d4-42e1-9f09-f63e1622f78e-bluemix:630e8f71457423bf586a43c1fc65165708db339e76a1937a955508a1a3459fa4@0ec7cd4c-48d4-42e1-9f09-f63e1622f78e-bluemix.cloudantnosqldb.appdomain.cloud");
+cloudant = Cloudant("https://d4b14d76-1fe5-462e-889f-cc236f8a6af2-bluemix:0d06cd6fc47769f7b9940f09218a59e49bf86b2c9c1938fc0e7db65d23b34ae7@d4b14d76-1fe5-462e-889f-cc236f8a6af2-bluemix.cloudantnosqldb.appdomain.cloud");
 mydb = cloudant.db.use('test');
  
 mydb.list({ include_docs: true }, function(err, body) {
@@ -48,7 +48,7 @@ mydb.list({ include_docs: true }, function(err, body) {
     	curr_docs = body.rows;
     	console.log(JSON.stringify(curr_docs[0].doc));
     }
-});*/
+});
 var test_res_tone = {};
 app.get('/myform', function(req, res){ 
     myText = req.query.mytext; //mytext is the name of your input box
